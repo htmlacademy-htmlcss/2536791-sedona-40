@@ -2,7 +2,7 @@
 
 * Студент: [Анастасия Ковалева](https://up.htmlacademy.ru/htmlcss/40/user/2536791).
 * Наставник: [Андрей Грачев](https://htmlacademy.ru/profile/angra)
-
+* Сайт: [Мой проект Седона](https://kovaleva9034.github.io/2536791-sedona-40/)
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
