@@ -10,7 +10,7 @@
         <header class="page-header" data-test="header">
             <nav class="navigation">
                 <a class="navigation-logo" href="index.html">
-                    <img class="page-header-logo" src="images-logo.svg" alt="Логотип">
+                    <img class="page-header-logo" src="images/logo.svg" width="140" height="70" alt="Логотип Седоны">
                 </a>
                 <ul class="navigation-list">
                     <li class="navigation-item">
@@ -96,13 +96,16 @@
                     </fieldset>
                     <fieldset class="catalog-filter-group">
                         <legend class="fieldset-title">Стоимость, ₽:</legend>
-                        <label>
-                            <input type="text" name="min-interval" value="0">
+                        <label class="filter-range-control">От<input type="text" name="min-interval" value="0">
                         </label>
-                        <label>
-                            <input type="text" name="max-interval" value="9000">
+                        <label class="filter-range-control">До<input type="text" name="max-interval" value="9000">
                         </label>
-                        <input type="range">
+                        <button type="button" class="filter-range-handle-min">
+                            <span class="visually-hidden">Управление нижней границей стоимости</span>
+                        </button>
+                        <button type="button" class="range-toggle toggle-max">
+                            <span class="visually-hidden">Управление верхней границей стоимости</span>
+                        </button>
                     </fieldset>
                     <button type="submit" class="catalog-filter-submit">Применить</button>
                     <button type="reset" class="catalog-filter-reset">Сбросить</button>
@@ -115,19 +118,27 @@
                     <option value="expensive">Сначала дорогие</option>
                     <option value="popular">Сначала популярные</option>
                 </select>
-                <a class="button" href="#">
-                    <span class="visually-hidden">Показать плиткой</span>
-                </a>
-                <a class="button" href="#">
-                    <span class="visually-hidden">Показать карточки</span>
-                </a>
-                <a class="button" href="#">
-                    <span class="button">Показать список</span>
-                </a>
+                <ul class="view-buttons">
+                    <li class="view-button-item">
+                        <a class="view-button-tile" href="#">
+                            <span class="visually-hidden">Показать плиткой</span>
+                        </a>
+                    </li>
+                    <li class="view-button-item">
+                        <a class=" view-button-card" href="#">
+                            <span class="visually-hidden">Показать карточками</span>
+                        </a>
+                    </li>
+                    <li class="view-button-item">
+                        <a class="view-button-list" href="#">
+                            <span class="button">Показать списком</span>
+                        </a>
+                    </li>
+                </ul>
                 <ul class="catalog-hotels-list">
                     <li class="catalog-hotels-card">
                         <a class="catalog-hotels-card-link" href="#">
-                            <img src="#" alt="вид изнутри горы на звезды">
+                            <img src="images/hotels/hotel-1.jpg" width="300" height="212" alt="вид изнутри горы на звезды">
                             <h3 class="catalog-hotels-card-title">Amara Resort & Spa</h3>
                         </a>
                         <p class="catalog-hotels-type">Гостиница</p>
@@ -141,7 +152,7 @@
                     </li>
                     <li class="catalog-hotels-card">
                         <a class="catalog-hotels-card-link" href="#">
-                            <img src="#" alt="Радуга в горах">
+                            <img src="images/hotels/hotel-2.jpg" width="300" height="212" alt="Радуга в горах">
                             <h3 class="catalog-hotels-card-title">Villas at Poco Diablo</h3>
                         </a>
                         <p class="catalog-hotels-type">Гостиница</p>
@@ -155,7 +166,7 @@
                     </li>
                     <li class="catalog-hotels-card">
                         <a class="catalog-hotels-card-link" href="#">
-                            <img src="#" alt="Низкие горы">
+                            <img src="images/hotels/hotel-3.jpg" width="300" height="212" alt="Низкие горы">
                             <h3 class="catalog-hotels-card-title">Desert Quail Inn</h3>
                         </a>
                         <p class="catalog-hotels-type">Гостиница</p>
@@ -169,7 +180,7 @@
                     </li>
                     <li class="catalog-hotels-card">
                         <a class="catalog-hotels-card-link" href="#">
-                            <img src="#" alt="горы и звездное небо">
+                            <img src="images/hotels/hotel-4.jpg" width="300" height="212" alt="горы и звездное небо">
                             <h3 class="catalog-hotels-card-title">GreenTree Inn</h3>
                         </a>
                         <p class="catalog-hotels-type">Гостиница</p>
@@ -196,7 +207,7 @@
                         <a class="pagination-link" href="#">4</a>
                     </li>
                     <li class="pagination-item">
-                    <span class="pagination-text">...</span>
+                        <span class="pagination-text">...</span>
                     </li>
                     <li class="pagination-item">
                         <a class="pagination-link" href="#">10</a>
@@ -209,34 +220,34 @@
                 <form action="https://echo.htmlacademy.ru/" class="newsletter-form">
                     <p class="subscribe-form-name">
                         <label for="user-email" class="visually-hidden">Ваш e-mail</label>
-                        <input type="email" placeholder="ваш e-mail" class="email-input" id="user-email">
+                        <input type="text" placeholder="ваш e-mail" class="email-input" id="user-email" required>
                     </p>
                     <button type="submit">Подписаться</button>
                 </form>
             </section>
         </main>
         <footer class="page footer" data-test="footer">
-                <ul class="footer-social-list">
-                    <li class="footer-social-item">
-                        <a class="button" href="https://vk.com/htmlacademy">
-                            <span class="visually-hidden">ВКонтакте</span>
-                        </a>
-                    </li>
-                    <li class="footer-social-item">
-                        <a class="button" href="https://t.me/htmlacademy">
-                            <span class="visually-hidden">Телеграм</span>
-                        </a>
-                    </li>
-                    <li class="footer-social-item">
-                        <a class="button" href="https://www.youtube.com/user/htmlacademyru">
-                            <span class="visually-hidden">Youtube</span>
-                        </a>
-                    </li>
-                </ul>
-                <a href="tel:+78128121212">+7(812) 812-12-12</a>
-                <a href="https://htmlacademy.ru/" class="copyright">
-                    <img src="#" alt="Логотип Html-academy">
-                </a>
+            <ul class="footer-social-list">
+                <li class="footer-social-item">
+                    <a class="button" href="https://vk.com/htmlacademy">
+                        <span class="visually-hidden">ВКонтакте</span>
+                    </a>
+                </li>
+                <li class="footer-social-item">
+                    <a class="button" href="https://t.me/htmlacademy">
+                        <span class="visually-hidden">Телеграм</span>
+                    </a>
+                </li>
+                <li class="footer-social-item">
+                    <a class="button" href="https://www.youtube.com/user/htmlacademyru">
+                        <span class="visually-hidden">Youtube</span>
+                    </a>
+                </li>
+            </ul>
+            <a href="tel:+78128121212">+7(812) 812-12-12</a>
+            <a href="https://htmlacademy.ru/" class="copyright">
+                <img src="images/logo-HTML-Academy.svg" width="115" height="33" alt="Логотип Html-academy">
+            </a>
         </footer>
     </body>
 
