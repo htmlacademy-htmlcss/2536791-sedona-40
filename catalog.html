@@ -54,69 +54,69 @@
                             <a class="breadcrumbs-link" href="#">Гостиницы</a>
                         </li>
                     </ul>
-                    <section class=" catalog-filter" data-test="filter">
-                        <h2 class="visually-hidden">Фильтры</h2>
-                        <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-                            <fieldset class="catalog-filter-group">
-                                <legend class="fieldset-title">Инфраструктура:</legend>
-                                <ul class="catalog-filter-list">
-                                    <li class="catalog-filter-item">
-                                        <label>
-                                            <input type="checkbox" name="swimming pool" checked> Бассейн
-                                        </label>
-                                    </li>
-                                    <li class="catalog-filter-item">
-                                        <label>
-                                            <input type="checkbox" name="parking" checked> Парковка
-                                        </label>
-                                    </li>
-                                    <li class="catalog-filter-item">
-                                        <label>
-                                            <input type="checkbox" name="wi-fi"> Wi-fi
-                                        </label>
-                                    </li>
-                                </ul>
-                            </fieldset>
-                            <fieldset class="catalog-filter-group">
-                                <legend class="fieldset-title">Тип жилья:</legend>
-                                <ul class="catalog-filter-list">
-                                    <li class="catalog-filter-item">
-                                        <label>
-                                            <input type="radio" name="type of housing" value="Гостиница" checked>
-                                            Гостиница
-                                        </label>
-                                    </li>
-                                    <li class="catalog-filter-item">
-                                        <label>
-                                            <input type="radio" name="type of housing" value="Мотель" checked> Мотель
-                                        </label>
-                                    </li>
-                                    <li class="catalog-filter-item">
-                                        <label>
-                                            <input type="radio" name="type of housing" value="Апартаменты" checked>
-                                            Апартаменты
-                                        </label>
-                                    </li>
-                                </ul>
-                            </fieldset>
-                            <fieldset class="catalog-filter-group">
-                                <legend class="fieldset-title">Стоимость, ₽:</legend>
-                                <label class="filter-range-control">От<input type="text" name="min-interval" value="0">
-                                </label>
-                                <label class="filter-range-control">До<input type="text" name="max-interval"
-                                        value="9000">
-                                </label>
-                                <button type="button" class="filter-range-handle-min">
-                                    <span class="visually-hidden">Управление нижней границей стоимости</span>
-                                </button>
-                                <button type="button" class="range-toggle toggle-max">
-                                    <span class="visually-hidden">Управление верхней границей стоимости</span>
-                                </button>
-                            </fieldset>
-                            <button type="submit" class="catalog-filter-submit">Применить</button>
-                            <button type="reset" class="catalog-filter-reset">Сбросить</button>
-                        </form>
-                    </section>
+                </header>
+                <section class=" catalog-filter" data-test="filter">
+                    <h2 class="visually-hidden">Фильтры</h2>
+                    <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+                        <fieldset class="catalog-filter-group">
+                            <legend class="fieldset-title">Инфраструктура:</legend>
+                            <ul class="catalog-filter-list">
+                                <li class="catalog-filter-item">
+                                    <label>
+                                        <input type="checkbox" name="swimming pool" checked> Бассейн
+                                    </label>
+                                </li>
+                                <li class="catalog-filter-item">
+                                    <label>
+                                        <input type="checkbox" name="parking" checked> Парковка
+                                    </label>
+                                </li>
+                                <li class="catalog-filter-item">
+                                    <label>
+                                        <input type="checkbox" name="wi-fi"> Wi-fi
+                                    </label>
+                                </li>
+                            </ul>
+                        </fieldset>
+                        <fieldset class="catalog-filter-group">
+                            <legend class="fieldset-title">Тип жилья:</legend>
+                            <ul class="catalog-filter-list">
+                                <li class="catalog-filter-item">
+                                    <label>
+                                        <input type="radio" name="type of housing" value="Гостиница" checked>
+                                        Гостиница
+                                    </label>
+                                </li>
+                                <li class="catalog-filter-item">
+                                    <label>
+                                        <input type="radio" name="type of housing" value="Мотель" checked> Мотель
+                                    </label>
+                                </li>
+                                <li class="catalog-filter-item">
+                                    <label>
+                                        <input type="radio" name="type of housing" value="Апартаменты" checked>
+                                        Апартаменты
+                                    </label>
+                                </li>
+                            </ul>
+                        </fieldset>
+                        <fieldset class="catalog-filter-group">
+                            <legend class="fieldset-title">Стоимость, ₽:</legend>
+                            <label class="filter-range-control">От<input type="text" name="min-interval" value="0">
+                            </label>
+                            <label class="filter-range-control">До<input type="text" name="max-interval" value="9000">
+                            </label>
+                            <button type="button" class="filter-range-handle-min">
+                                <span class="visually-hidden">Управление нижней границей стоимости</span>
+                            </button>
+                            <button type="button" class="range-toggle toggle-max">
+                                <span class="visually-hidden">Управление верхней границей стоимости</span>
+                            </button>
+                        </fieldset>
+                        <button type="submit" class="catalog-filter-submit">Применить</button>
+                        <button type="reset" class="catalog-filter-reset">Сбросить</button>
+                    </form>
+                </section>
             </div>
             <section class="catalog-hotels" data-test="catalog">
                 <h2 class="catalog-hotels-title">Найдено гостиниц: 38</h2>
@@ -224,12 +224,13 @@
             </section>
             <section class="newsletter" data-test="subscribe">
                 <h2 class="newsletter-title-catalog">Подпишитесь на рассылку</h2>
-                <p class="newsletter-text-catalog">Только полезная информация и никакого спама, честное бойскаутское!</p>
+                <p class="newsletter-text-catalog">Только полезная информация и никакого спама, честное бойскаутское!
+                </p>
                 <form action="https://echo.htmlacademy.ru/" class="newsletter-form">
                     <p class="subscribe-form-name">
                         <label for="user-email" class="visually-hidden">Ваш e-mail</label>
                         <input type="text" placeholder="ваш e-mail" class="email-input" id="user-email" required>
-                    <button type="submit">Подписаться</button>
+                        <button type="submit">Подписаться</button>
                     </p>
                 </form>
             </section>
