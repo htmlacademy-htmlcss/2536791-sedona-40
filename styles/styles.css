@@ -46,7 +46,6 @@ body {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-
 }
 
 .notification-badge {
@@ -85,7 +84,6 @@ body {
 }
 
 .lead {
-  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -101,7 +99,6 @@ body {
   color: #333333;
   text-align: center;
   background-color: #ffffff;
-
 }
 
 .advantages-title {
@@ -133,16 +130,6 @@ body {
   background-color: rgba(131, 179, 211, 0.2);
 }
 
-.lead {
-  font-family: "PT Sans", sans-serif;
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 36px;
-  text-transform: uppercase;
-  color: #000000;
-  text-align: center;
-}
-
 .infrastructure-text {
   font-weight: 400;
   font-size: 22px;
@@ -150,7 +137,6 @@ body {
   color: #333333;
   background-color: #ffffff;
   text-align: center;
-
 }
 
 .infrastructure-title {
@@ -258,7 +244,6 @@ body {
   text-decoration-line: none;
 }
 
-
 /* Стилизация каталога*/
 .filter-block {
   background-image: url("../images/background/filter-background.jpg");
@@ -326,7 +311,6 @@ body {
   background-color: transparent;
   text-transform: uppercase;
   text-align: center;
-
 }
 
 .catalog-hotels-title {
@@ -377,7 +361,6 @@ body {
   background-color: #756157;
   text-transform: uppercase;
   text-decoration: none;
-
 }
 
 .catalog-hotels-like {
@@ -389,7 +372,6 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
-
 }
 
 .catalog-hotels-in-like {
@@ -401,7 +383,6 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
-
 }
 
 .catalog-hotels-rating {
@@ -449,8 +430,7 @@ body {
 .newsletter-text-catalog {
   font-weight: 400;
   font-size: 22px;
-  line-height: 26;
+  line-height: 26px;
   color: #333333;
   text-align: center;
-
 }
