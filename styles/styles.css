@@ -332,10 +332,12 @@ body {
   width: 1060px;
   margin: 0 auto;
   text-decoration: none;
+  padding: 0 70px;
+  justify-content: space-between;
 }
 
 .footer-social-list {
-  width: 189px;
+  width: 190px;
   margin: 0;
   padding: 0;
 }
@@ -349,6 +351,10 @@ body {
   color: #000000;
   text-decoration-line: none;
   width: 331px;
+}
+
+.copyright {
+  width: 115px;
 }
 
 /* Стилизация каталога*/
@@ -389,21 +395,22 @@ body {
 
 .catalog-filter {
   display: flex;
+  gap: 32px;
 }
 
 .infrastructure-group {
   width: 150px;
-  gap: 32px;
+  margin-right: 32px;
 }
 
 .type-housing-group {
   width: 150px;
-  gap: 32px;
+  margin-right: 32px;
 }
 
 .price-group {
   width: 288px;
-  gap: 32px;
+  margin-left: 0 auto;
 }
 
 .fieldset-title {
@@ -588,6 +595,11 @@ body {
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
+  display: flex;
+  width: 60px;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
 }
 
 .pagination-current {
