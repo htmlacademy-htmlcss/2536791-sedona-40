@@ -25,20 +25,22 @@
               <a class="navigation-link navigation-link-current" href="catalog.html"> Гостиницы</a>
             </li>
           </ul>
-          <ul class="navigation-list navigation-user">
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">
-                <span class="visually-hidden"> Поиск</span>
+          <ul class="navigation-user">
+            <li class="navigation-user-item">
+              <a class="navigation-user-link" href="#">
+                <span class="visually-hidden">Поиск</span>
               </a>
             </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">
-                <span class="visually-hidden"> Избранное</span>
-                <span class="notification-badge"> 12</span>
+            <li class="navigation-user-item">
+              <a class="navigation-user-link" href="#">
+                <span class="visually-hidden">Отелей в избранном:</span>
+                <span class="notification-badge">12</span>
               </a>
+            </li>
+            <li class="navigation-user-item">
+              <a class="navigation-user-link header-button" href="#">Хочу сюда!</a>
             </li>
           </ul>
-          <a class="header-button" href="#"> Хочу сюда!</a>
         </nav>
       </header>
       <main class="main-container" data-test="main">
@@ -114,8 +116,10 @@
                   <span class="visually-hidden">Управление верхней границей стоимости</span>
                 </button>
               </fieldset>
-              <button type="submit" class="catalog-filter-submit">Применить</button>
-              <button type="reset" class="catalog-filter-reset">Сбросить</button>
+              <div class="catalog-filter-buttons">
+                <button type="submit" class="catalog-filter-submit">Применить</button>
+                <button type="reset" class="catalog-filter-reset">Сбросить</button>
+              </div>
             </form>
           </section>
         </div>
@@ -231,8 +235,8 @@
           <form action="https://echo.htmlacademy.ru/" class="newsletter-form">
             <p class="subscribe-form-name">
               <label for="user-email" class="visually-hidden">Ваш e-mail</label>
-              <input type="text" placeholder="ваш e-mail" class="email-input" id="user-email" required>
-              <button type="submit">Подписаться</button>
+              <input type="email" placeholder="ваш e-mail" class="email-input" id="user-email" required>
+              <button type="submit" class="newsletter-button">Подписаться</button>
             </p>
           </form>
         </section>
