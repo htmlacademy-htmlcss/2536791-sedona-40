@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>Гостиницы Седоны</title>
+    <link rel="icon" href="favicon.ico" sizes="32x32" type="image/png">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
 
@@ -27,12 +28,12 @@
           </ul>
           <ul class="navigation-user">
             <li class="navigation-user-item">
-              <a class="navigation-user-link" href="#">
+              <a class="navigation-user-link user-link-search" href="#">
                 <span class="visually-hidden">Поиск</span>
               </a>
             </li>
             <li class="navigation-user-item">
-              <a class="navigation-user-link" href="#">
+              <a class="navigation-user-link user-link-favourite" href="#">
                 <span class="visually-hidden">Отелей в избранном:</span>
                 <span class="notification-badge">12</span>
               </a>
@@ -50,6 +51,13 @@
             <ul class="breadcrumbs">
               <li class="breadcrumbs-item">
                 <a class="breadcrumbs-link" href="index.html">
+                  <svg aria-hidden="true" focusable="false" width="13" height="15" viewBox="0 0 13 15" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M6.5 0.5L0.5 6.30006V12.5001H12.5V6.30006L6.5 0.5ZM11.5 11.5001H1.5V6.70005L6.5 1.9L11.5 6.70005V11.5001Z"
+                      fill="white" />
+                    <path d="M4.5 10.5001H5.5V8.00005H7.5V10.5001H8.5V7.00005H4.5V10.5001Z" fill="white" />
+                  </svg>
                   <span class="visually-hidden">На главную</span>
                 </a>
               </li>
@@ -133,17 +141,63 @@
             </select>
             <ul class="view-buttons">
               <li class="view-button-item">
-                <a class="view-button-tile" href="#">
+                <a class="view-button-tile" href="catalog.html?view=tile">
+                  <svg aria-hidden="true" focusable="false" width="16" height="14" viewBox="0 0 16 14"
+                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_117111_312)">
+                      <path d="M4 0H0V6H4V0Z" fill="black" />
+                      <path d="M16 0H12V6H16V0Z" fill="black" />
+                      <path d="M10 0H6V6H10V0Z" fill="black" />
+                      <path d="M4 8H0V14H4V8Z" fill="black" />
+                      <path d="M16 8H12V14H16V8Z" fill="black" />
+                      <path d="M10 8H6V14H10V8Z" fill="black" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_117111_312">
+                        <rect width="16" height="14" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
                   <span class="visually-hidden">Показать плиткой</span>
                 </a>
               </li>
               <li class="view-button-item">
-                <a class=" view-button-card" href="#">
+                <a class=" view-button-card" href="catalog.html?view=card">
+                  <svg aria-hidden="true" focusable="false" width="16" height="14" viewBox="0 0 16 14"
+                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_117111_398)">
+                      <path d="M16 12H0V14H16V12Z" fill="black" />
+                      <path d="M14 2V8H2V2H14ZM16 0H0V10H16V0Z" fill="black" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_117111_398">
+                        <rect width="16" height="14" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
                   <span class="visually-hidden">Показать карточками</span>
                 </a>
               </li>
               <li class="view-button-item">
-                <a class="view-button-list" href="#">
+                <a class="view-button-list" href="catalog.html?view=list">
+                  <svg aria-hidden="true" focusable="false" width="16" height="14" viewBox="0 0 16 14"
+                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_112102_295)">
+                      <path d="M2 0H0V2H2V0Z" fill="black" />
+                      <path d="M16 0H4V2H16V0Z" fill="black" />
+                      <path d="M2 4H0V6H2V4Z" fill="black" />
+                      <path d="M16 4H4V6H16V4Z" fill="black" />
+                      <path d="M2 8H0V10H2V8Z" fill="black" />
+                      <path d="M16 8H4V10H16V8Z" fill="black" />
+                      <path d="M2 12H0V14H2V12Z" fill="black" />
+                      <path d="M16 12H4V14H16V12Z" fill="black" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_112102_295">
+                        <rect width="16" height="14" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
                   <span class="visually-hidden">Показать списком</span>
                 </a>
               </li>
@@ -152,56 +206,60 @@
           <ul class="catalog-hotels-list">
             <li class="catalog-hotels-card">
               <a class="catalog-hotels-card-link" href="#">
-                <img src="images/hotels/hotel-1.jpg" width="300" height="212" alt="вид изнутри горы на звезды">
+                <img class="catalog-hotels-card-image" src="images/hotels/hotel-1.jpg" width="300" height="212"
+                  alt="вид изнутри горы на звезды">
                 <h3 class="catalog-hotels-card-title">Amara Resort & Spa</h3>
               </a>
               <p class="catalog-hotels-type">Гостиница</p>
               <p class="catalog-hotels-price">От 4000 ₽</p>
               <a class="catalog-hotels-detail" href="#">Подробнее</a>
               <a class="catalog-hotels-like" href="#">В Избранное</a>
-              <p class="catalog-hotels-card-stars">
+              <p class="catalog-hotels-card-stars stars-4">
                 <span class="visually-hidden">4 звезды</span>
               </p>
               <p class="catalog-hotels-rating">Рейтинг: 8,5</p>
             </li>
             <li class="catalog-hotels-card">
               <a class="catalog-hotels-card-link" href="#">
-                <img src="images/hotels/hotel-2.jpg" width="300" height="212" alt="Радуга в горах">
+                <img class="catalog-hotels-card-image" src="images/hotels/hotel-2.jpg" width="300" height="212"
+                  alt="Радуга в горах">
                 <h3 class="catalog-hotels-card-title">Villas at Poco Diablo</h3>
               </a>
               <p class="catalog-hotels-type">Гостиница</p>
               <p class="catalog-hotels-price">От 5000 ₽</p>
               <a class="catalog-hotels-detail" href="#">Подробнее</a>
               <a class="catalog-hotels-in-like" href="#">В Избранном</a>
-              <p class="catalog-hotels-card-stars">
+              <p class="catalog-hotels-card-stars stars-4">
                 <span class="visually-hidden">4 звезды</span>
               </p>
               <p class="catalog-hotels-rating">Рейтинг: 9,2</p>
             </li>
             <li class="catalog-hotels-card">
               <a class="catalog-hotels-card-link" href="#">
-                <img src="images/hotels/hotel-3.jpg" width="300" height="212" alt="Низкие горы">
+                <img class="catalog-hotels-card-image" src="images/hotels/hotel-3.jpg" width="300" height="212"
+                  alt="Низкие горы">
                 <h3 class="catalog-hotels-card-title">Desert Quail Inn</h3>
               </a>
               <p class="catalog-hotels-type">Гостиница</p>
               <p class="catalog-hotels-price">От 2500 ₽</p>
               <a class="catalog-hotels-detail" href="#">Подробнее</a>
               <a class="catalog-hotels-like" href="#">В Избранное</a>
-              <p class="catalog-hotels-card-stars">
+              <p class="catalog-hotels-card-stars stars-3">
                 <span class="visually-hidden">3 звезды</span>
               </p>
               <p class="catalog-hotels-rating">Рейтинг: 6,9</p>
             </li>
             <li class="catalog-hotels-card">
               <a class="catalog-hotels-card-link" href="#">
-                <img src="images/hotels/hotel-4.jpg" width="300" height="212" alt="горы и звездное небо">
+                <img class="catalog-hotels-card-image" src="images/hotels/hotel-4.jpg" width="300" height="212"
+                  alt="горы и звездное небо">
                 <h3 class="catalog-hotels-card-title">GreenTree Inn</h3>
               </a>
               <p class="catalog-hotels-type">Гостиница</p>
               <p class="catalog-hotels-price">От 1500 ₽</p>
               <a class="catalog-hotels-detail" href="#">Подробнее</a>
               <a class="catalog-hotels-like" href="#">В Избранное</a>
-              <p class="catalog-hotels-card-stars">
+              <p class="catalog-hotels-card-stars stars-2">
                 <span class="visually-hidden">2 звезды</span>
               </p>
               <p class="catalog-hotels-rating">Рейтинг: 5,0</p>
@@ -244,17 +302,35 @@
       <footer class="page-footer" data-test="footer">
         <ul class="footer-social-list">
           <li class="footer-social-item">
-            <a class="button" href="https://vk.com/htmlacademy">
+            <a class="footer-social-link" href="https://vk.com/htmlacademy">
+              <svg aria-hidden="true" focusable="false" width="48" height="41" viewBox="0 0 48 41" fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M35.1164 14.8044C35.2824 14.2584 35.1164 13.8564 34.3214 13.8564H31.6964C31.0284 13.8564 30.7204 14.2034 30.5534 14.5864C30.5534 14.5864 29.2184 17.7824 27.3274 19.8584C26.7154 20.4604 26.4374 20.6514 26.1034 20.6514C25.9364 20.6514 25.6854 20.4604 25.6854 19.9134V14.8044C25.6854 14.1484 25.5014 13.8564 24.9454 13.8564H20.8174C20.4004 13.8564 20.1494 14.1604 20.1494 14.4494C20.1494 15.0704 21.0954 15.2144 21.1924 16.9624V20.7604C21.1924 21.5934 21.0394 21.7444 20.7054 21.7444C19.8154 21.7444 17.6504 18.5334 16.3654 14.8594C16.1164 14.1444 15.8644 13.8564 15.1934 13.8564H12.5664C11.8164 13.8564 11.6664 14.2034 11.6664 14.5864C11.6664 15.2684 12.5564 18.6564 15.8114 23.1374C17.9814 26.1974 21.0364 27.8564 23.8194 27.8564C25.4884 27.8564 25.6944 27.4884 25.6944 26.8534V24.5404C25.6944 23.8034 25.8524 23.6564 26.3814 23.6564C26.7714 23.6564 27.4384 23.8484 28.9964 25.3234C30.7764 27.0724 31.0694 27.8564 32.0714 27.8564H34.6964C35.4464 27.8564 35.8224 27.4884 35.6064 26.7604C35.3684 26.0364 34.5184 24.9854 33.3914 23.7384C32.7794 23.0284 31.8614 22.2634 31.5824 21.8804C31.1934 21.3894 31.3044 21.1704 31.5824 20.7334C31.5824 20.7334 34.7824 16.3074 35.1154 14.8044H35.1164Z"
+                  fill="#83B3D3" />
+              </svg>
               <span class="visually-hidden">ВКонтакте</span>
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="button" href="https://t.me/htmlacademy">
+            <a class="footer-social-link" href="https://t.me/htmlacademy">
+              <svg aria-hidden="true" focusable="false" width="48" height="41" viewBox="0 0 48 41" fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M31.785 12.9557L15.8405 19.1042C14.7523 19.5413 14.7586 20.1483 15.6408 20.419L19.7344 21.696L29.2058 15.7201C29.6537 15.4477 30.0629 15.5942 29.7265 15.8928L22.0528 22.8183H22.051L22.0528 22.8192L21.7705 27.0387C22.1841 27.0387 22.3667 26.8489 22.5987 26.625L24.5871 24.6915L28.7229 27.7464C29.4855 28.1664 30.0332 27.9506 30.2229 27.0405L32.9379 14.2453C33.2158 13.1311 32.5126 12.6266 31.785 12.9557Z"
+                  fill="#83B3D3" />
+              </svg>
               <span class="visually-hidden">Телеграм</span>
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="button" href="https://www.youtube.com/user/htmlacademyru">
+            <a class="footer-social-link" href="https://www.youtube.com/user/htmlacademyru">
+              <svg aria-hidden="true" focusable="false" width="48" height="41" viewBox="0 0 48 41" fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M31.9402 12.3564H16.5074C14.6467 12.3564 13.3333 13.9502 13.3333 15.7564V25.8502C13.3333 27.7627 14.6467 29.3564 16.5074 29.3564H32.1591C33.8009 29.3564 35.3333 27.7627 35.3333 25.9564V15.7564C35.1143 13.9502 33.8009 12.3564 31.9402 12.3564ZM20.9949 24.8939V16.8189L28.3283 20.8564L20.9949 24.8939Z"
+                  fill="#83B3D3" />
+              </svg>
               <span class="visually-hidden">Youtube</span>
             </a>
           </li>
