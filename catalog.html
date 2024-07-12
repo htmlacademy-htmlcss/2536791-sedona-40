@@ -126,20 +126,22 @@
               <fieldset class="catalog-filter-group price-group">
                 <legend class="fieldset-title">Стоимость, ₽:</legend>
                 <div class="range-wrapper-inputs">
-                  <label class="filter-range-control">От<input class="range-input range-input-min-interval" type="text"
-                      name="min-interval" value="0">
+                  <label class="filter-range-control">
+                    <span class="filter-range-label">от</span>
+                    <input class="range-input range-input-min-interval" type="text" name="min-interval" value="0">
                   </label>
-                  <label class="filter-range-control">До<input class="range-input range-input-max-interval" type="text"
-                      name="max-interval" value="9000">
+                  <label class="filter-range-control">
+                    <span class="filter-range-label">до</span>
+                    <input class="range-input range-input-max-interval" type="text" name="max-interval" value="9000">
                   </label>
                 </div>
                 <div class="range">
                   <div class="range-scale">
                     <div class="range-bar" style="left: 0; width: 226px">
-                      <button class="range-toggle toggle-min">
+                      <button class="range-toggle toggle-min" type="button">
                         <span class="visually-hidden">Управление нижней границей стоимости</span>
                       </button>
-                      <button class="range-toggle toggle-max">
+                      <button class="range-toggle toggle-max" type="button">
                         <span class="visually-hidden">Управление верхней границей стоимости</span>
                       </button>
                     </div>
@@ -306,10 +308,11 @@
           <h2 class="newsletter-title-catalog">Подпишитесь на рассылку</h2>
           <p class="newsletter-text-catalog">Только полезная информация и никакого спама, честное бойскаутское!
           </p>
-          <form action="https://echo.htmlacademy.ru/" class="newsletter-form">
+          <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
             <p class="subscribe-form-name">
               <label for="user-email" class="visually-hidden">Ваш e-mail</label>
-              <input type="email" placeholder="ваш e-mail" class="email-input" id="user-email" required>
+              <input class="email-input" type="email" name="user-email" id="user-email" placeholder="ваш e-mail"
+                required>
               <button type="submit" class="newsletter-button">Подписаться</button>
             </p>
           </form>
